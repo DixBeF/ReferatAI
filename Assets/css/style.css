@@ -1,0 +1,104 @@
+/* style.css */
+
+/* Root color palette for soft beige reading experience */
+:root {
+    --bg-color: #f6f1e7;
+    --text-color: #3b3b3b;
+    --primary-color: #b08968;
+    --primary-dark: #8b6b52;
+    --section-bg: #fdfaf6;
+    --border-color: #e2d8c3;
+  }
+  
+  body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.8;
+    
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .nav-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+  
+  .button {
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .button:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+  }
+  
+  .section {
+    max-width: 800px;
+    background-color: var(--section-bg);
+    margin: 0 auto 3rem;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    border: 1px solid var(--border-color);
+  }
+  
+  .section h2 {
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 600px) {
+    .button {
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+    }
+  
+    .section {
+      margin: 1rem;
+      padding: 1.5rem;
+    }
+  }
+
+  body {
+    padding-bottom: 6rem;
+  }
+  
+  
